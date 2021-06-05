@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Otto Attac";
+	src: url("../fonts/Otto-Attac-Type.woff");
+}
+
+@font-face {
+  font-family: "Hagrid Regular";
+	src: url("../fonts/Hagrid-Text-Regular.woff");
+}
+
+@font-face {
+  font-family: "Hagrid Italic";
+	src: url("../fonts/Hagrid-Text-Italic.woff");
+}
