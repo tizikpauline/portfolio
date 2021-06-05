@@ -5,7 +5,12 @@
 
 html, body {
   font-size: 1vw;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+}
+
+
+html p {
+  font-family: "Hagrid Regular";
 }
 
 header .menu {
@@ -54,6 +59,8 @@ header a {
 
 header .menu img {
   margin-left: 3vw;
+  margin-top: 1vw;
+  width: 20vh;
 }
 
 h1, h2 {
@@ -62,15 +69,20 @@ h1, h2 {
 
 main .main {
   display: flex;
-  justify-content: space-between;
-  
+  justify-content: center;
+  align-items: center ;
+  height: 60vw;
 }
 
 main .main h1 {
-  padding-top: 5vw;
-
-  font-size: 7rem;
+  padding-top: 12vh;
+  font-size: 8rem;
   text-transform: uppercase;
+  margin-left: 3vw;
+}
+
+main .left {
+
 }
 
 main .left h1 {
@@ -79,4 +91,48 @@ main .left h1 {
 
 main .right h1 {
   color: #F2F0E9;
+}
+
+main .right h1:first-child {
+  width: 10vw;
+}
+
+main #about {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+main #about .pic {
+  background-color: #F2F0E9;
+}
+
+main #about .pic img {
+  width: 50vw;
+}
+
+main #about .text {
+  background-color: #111111;
+  padding-left: 4vw;
+}
+
+#about .text h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #F2F0E9;
+  padding-bottom: 2vw;
+  padding-top: 1vw;
+}
+
+#about .text p {
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  color: #F2F0E9;
+  padding-bottom: 2vw;
+  padding-right: 8vw;
+}
+
+#about .text a {
+  font-size: 1.5rem;
+  color: #23CE6B;
 }
