@@ -5,6 +5,78 @@
 
 html, body {
   font-size: 1vw;
-  background-color: #F2F0E9;
   overflow-x: hidden;
+}
+
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+
+  font-family: "Hagrid Regular";
+  font-size: 1.2rem;
+}
+
+.left {
+  height: 100%;
+  width: 50%;
+  background-color: #F2F0E9;
+}
+
+.right {
+  height: 100%;
+  width: 50%;
+  background-color: #111111;
+}
+
+header .left {
+  height: 100%;
+  width: 50%;
+  background-color: #F2F0E9;
+}
+
+header .right {
+  height: 100%;
+  width: 50%;
+  background-color: #111111;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0;
+}
+
+header a {
+  padding-right: 3vw;
+  color: #F2F0E9;
+  text-decoration: none;
+}
+
+header .menu img {
+  margin-left: 3vw;
+}
+
+h1, h2 {
+  font-family: "Otto Attac";
+}
+
+main .main {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+main .main h1 {
+  padding-top: 5vw;
+
+  font-size: 7rem;
+  text-transform: uppercase;
+}
+
+main .left h1 {
+  color: #111111;
+}
+
+main .right h1 {
+  color: #F2F0E9;
 }
