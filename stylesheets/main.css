@@ -9,7 +9,7 @@ html, body {
 }
 
 
-html p {
+html p, a {
   font-family: "Hagrid Regular";
 }
 
@@ -48,7 +48,6 @@ header .right {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 0;
 }
 
 header a {
@@ -71,18 +70,14 @@ main .main {
   display: flex;
   justify-content: center;
   align-items: center ;
-  height: 60vw;
+  height: 115vh;
 }
 
 main .main h1 {
-  padding-top: 12vh;
+  padding-top: 15vh;
   font-size: 8rem;
   text-transform: uppercase;
   margin-left: 3vw;
-}
-
-main .left {
-
 }
 
 main .left h1 {
@@ -99,7 +94,6 @@ main .right h1:first-child {
 
 main #about {
   display: flex;
-
   justify-content: space-between;
 }
 
@@ -113,11 +107,11 @@ main #about .pic img {
 
 main #about .text {
   background-color: #111111;
-  padding-left: 4vw;
+  padding-left: 8vw;
 }
 
 #about .text h2 {
-  font-size: 5rem;
+  font-size: 8rem;
   text-transform: uppercase;
   color: #F2F0E9;
   padding-bottom: 2vw;
@@ -135,4 +129,85 @@ main #about .text {
 #about .text a {
   font-size: 1.5rem;
   color: #23CE6B;
+}
+
+main #projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+#projects .text {
+  background-color: #F2F0E9;
+  width: 50%;
+}
+
+#projects .text h2 {
+  font-size: 8rem;
+  text-transform: uppercase;
+  color: #111111;
+  padding-bottom: 2vw;
+  padding-top: 10vw;
+  padding-left: 3vw;
+}
+
+#projects .cases {
+  background-color: #111111;
+  width: 50%;
+}
+
+#projects .cases ul {
+    padding-top: 25vw;
+    padding-left: 8vw;
+    padding-bottom: 10vw;
+}
+
+#projects .cases li {
+  padding-bottom: 6vw;
+}
+
+#projects .cases a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #F2F0E9;
+}
+
+#contacts .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background-color: #FF621F;
+  height: 10vw;
+}
+
+#contacts .links a {
+  color: #111111;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#contacts .first, .behance, .instagram, .telegram, .email, .final {
+  width: 18vw;
+  height: 10vw;
+  background-color: #F8BAD1;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  padding-top: 5vw;
+  background-color: #FF621F;
+  height: 3vw;
+}
+
+footer p {
+  color: #111111;
+  padding-left: 3vw;
 }
