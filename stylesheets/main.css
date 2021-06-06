@@ -66,6 +66,13 @@ h1, h2 {
   font-family: "Otto Attac";
 }
 
+main .images-downloader {
+  margin-left: 500vw;
+  overflow: hidden;
+  position: absolute;
+  display: none;
+}
+
 main .main {
   display: flex;
   justify-content: center;
@@ -210,4 +217,24 @@ footer {
 footer p {
   color: #111111;
   padding-left: 3vw;
+}
+
+/* custom cursor */
+@media (hover: hover) and (pointer: fine) {
+  #cursor {
+    z-index: 99;
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  #cursor .cursor--inner {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 0.1vw #111111;
+  }
 }

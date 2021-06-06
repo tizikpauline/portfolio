@@ -9,6 +9,9 @@
   </head>
   <body>
     <header>
+      <div id="cursor">
+          <div class="cursor--inner"></div>
+      </div>
       <div class="menu">
         <div class="left">
           <img src="images/logo.svg" alt="logo">
@@ -18,11 +21,18 @@
               <a href="#about">about</a>
               <a href="#projects">projects</a>
               <a href="#contacts">contacts</a>
-            </ul>
+          </ul>
         </div>
       </div>
     </header>
     <main>
+      <section class="images-downloader">
+        <img src="images/MTS.png">
+        <!-- <img src="images/dido.png">
+        <img src="images/idomeneus.png">
+        <img src="images/kastor_polluks.png">
+        <img src="images/orpheus.png"> -->
+      </section>
       <section class="main">
         <div class="left">
           <h1>Graphic</h1>
@@ -37,7 +47,7 @@
         <div class="pic">
           <img src="images/me.gif" alt="me">
         </div>
-        <div class="text">s
+        <div class="text">
           <h2>About</h2>
           <p>Hey! I&rsquo;m Polina Tizik and I&nbsp;am a&nbsp;graphic and UI/UX designer from Moscow. At&nbsp;the moment&nbsp;I work at&nbsp;multimedia interactive studio <a target="_blank" href="https://ru.silasveta.com/">Sila Sveta</a> as&nbsp;graphic designer and study product and digital design  in&nbsp;<a target="_blank" href="https://design.hse.ru/">HSE Art and Design School</a>.</p>
           <p>I&nbsp;create identity, branding design and art concepts as&nbsp;well as&nbsp;UI/UX design for different apps and websites.</p>
@@ -50,13 +60,13 @@
         </div>
         <div class="cases">
           <ul>
-            <li><a target="_blank" href="https://www.behance.net/gallery/116384581/MTS-Volunteer-Theaters-Festival-Landing-Page">MTS Theater Landing</a></li>
-            <li><a target="_blank" href="https://www.behance.net/gallery/107641095/Grimes-Art-Kit/modules/617033323">Grimes Art Kit</a></li>
-            <li><a target="_blank" href="https://portfolio.hse.ru/Project/100624">Church Website</a></li>
-            <li><a target="_blank" href="https://www.behance.net/gallery/100112401/Eat-It-App-UXUI-Identity">Just Eat It App</a></li>
-            <li><a target="_blank" href="https://www.behance.net/gallery/95642657/Bloowery-Plant-Care-App">Bloowery App</a></li>
-            <li><a target="_blank" href="https://www.behance.net/gallery/95607795/PRELAB-Shop-Identity-UI-and-UX">Prelab Shop</a></li>
-            <li><a target="_blank" href="https://www.behance.net/gallery/92334071/SKRYABIN-CENTER-centr-eksperimentalnoj-muzyki">Skryabin Center</a></li>
+            <li><a target="_blank" class="menu__link" href="https://www.behance.net/gallery/116384581/MTS-Volunteer-Theaters-Festival-Landing-Page">MTS Theater Landing</a></li>
+            <li><a target="_blank" class="menu__link" href="https://www.behance.net/gallery/107641095/Grimes-Art-Kit/modules/617033323">Grimes Art Kit</a></li>
+            <li><a target="_blank" class="menu__link" href="https://portfolio.hse.ru/Project/100624">Church Website</a></li>
+            <li><a target="_blank" class="eat" href="https://www.behance.net/gallery/100112401/Eat-It-App-UXUI-Identity">Just Eat It App</a></li>
+            <li><a target="_blank" class="menu__link" href="https://www.behance.net/gallery/95642657/Bloowery-Plant-Care-App">Bloowery App</a></li>
+            <li><a target="_blank" class="menu__link" href="https://www.behance.net/gallery/95607795/PRELAB-Shop-Identity-UI-and-UX">Prelab Shop</a></li>
+            <li><a target="_blank" class="menu__link" href="https://www.behance.net/gallery/92334071/SKRYABIN-CENTER-centr-eksperimentalnoj-muzyki">Skryabin Center</a></li>
           </ul>
         </div>
       </section>
@@ -82,5 +92,9 @@
     <footer>
       <p>©2021 – All rights reserved</p>
     </footer>
+    <script src="javascripts/jquery.js" charset="utf-8"></script>
+    <script src="javascripts/charming.min.js"></script>
+    <script src="javascripts/TweenMax.min.js"></script>
+    <script src="javascripts/index.js"></script>
   </body>
 </html>
