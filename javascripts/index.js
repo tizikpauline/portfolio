@@ -114,7 +114,7 @@ class Menu {
     }
 }
 
-$(".cases a:nth-of-type(1)").mouseenter (function() {
+$(".cases li:nth-of-type(1)").mouseenter (function() {
   $(".cases").css({
     "background-image": "url(images/MTS.jpg)",
     "background-size": "60%",
@@ -127,16 +127,16 @@ $(".cases a:nth-of-type(1)").mouseenter (function() {
   })
 })
 
-$(".cases a:nth-of-type(1)").mouseleave (function() {
+$(".cases li:nth-of-type(1)").mouseleave (function() {
   $(".cases").css({
     "background-image": "none",
     "transition": "2s"
   })
 })
 
-$(".cases a:nth-of-type(2)").mouseenter (function() {
+$(".cases li:nth-of-type(2)").mouseenter (function() {
   $(".cases").css({
-    "background-image": "url(images/MTS.jpg)",
+    "background-image": "url(images/grimes.jpg)",
     "background-size": "60%",
     "background-position": "96% 20%",
     "background-repeat": "no-repeat",
@@ -147,16 +147,16 @@ $(".cases a:nth-of-type(2)").mouseenter (function() {
   })
 })
 
-$(".cases a:nth-of-type(2)").mouseleave (function() {
+$(".cases li:nth-of-type(2)").mouseleave (function() {
   $(".cases").css({
     "background-image": "none",
     "transition": "2s"
   })
 })
 
-$(".cases a:nth-of-type(3)").mouseenter (function() {
+$(".cases li:nth-of-type(3)").mouseenter (function() {
   $(".cases").css({
-    "background-image": "url(images/MTS.jpg)",
+    "background-image": "url(images/church.jpeg)",
     "background-size": "60%",
     "background-position": "90% 70%",
     "background-repeat": "no-repeat",
@@ -167,16 +167,16 @@ $(".cases a:nth-of-type(3)").mouseenter (function() {
   })
 })
 
-$(".cases a:nth-of-type(3)").mouseleave (function() {
+$(".cases li:nth-of-type(3)").mouseleave (function() {
   $(".cases").css({
     "background-image": "none",
     "transition": "2s"
   })
 })
 
-$(".cases a:nth-of-type(4)").mouseenter (function() {
+$(".cases li:nth-of-type(4)").mouseenter (function() {
   $(".cases").css({
-    "background-image": "url(images/MTS.jpg)",
+    "background-image": "url(images/eat.jpg)",
     "background-size": "60%",
     "background-position": "95% 100%",
     "background-repeat": "no-repeat",
@@ -187,7 +187,67 @@ $(".cases a:nth-of-type(4)").mouseenter (function() {
   })
 })
 
-$(".cases a:nth-of-type(4)").mouseleave (function() {
+$(".cases li:nth-of-type(4)").mouseleave (function() {
+  $(".cases").css({
+    "background-image": "none",
+    "transition": "2s"
+  })
+})
+
+$(".cases li:nth-of-type(5)").mouseenter (function() {
+  $(".cases").css({
+    "background-image": "url(images/bloowery.png)",
+    "background-size": "60%",
+    "background-position": "95% 100%",
+    "background-repeat": "no-repeat",
+    "-webkit-transition": "all" + "1s",
+    "-moz-transition": "all" + "1s",
+    "-o-transition": "all" + "1s",
+    "transition": "1s"
+  })
+})
+
+$(".cases li:nth-of-type(5)").mouseleave (function() {
+  $(".cases").css({
+    "background-image": "none",
+    "transition": "2s"
+  })
+})
+
+$(".cases li:nth-of-type(6)").mouseenter (function() {
+  $(".cases").css({
+    "background-image": "url(images/prelab.png)",
+    "background-size": "60%",
+    "background-position": "95% 100%",
+    "background-repeat": "no-repeat",
+    "-webkit-transition": "all" + "1s",
+    "-moz-transition": "all" + "1s",
+    "-o-transition": "all" + "1s",
+    "transition": "1s"
+  })
+})
+
+$(".cases li:nth-of-type(6)").mouseleave (function() {
+  $(".cases").css({
+    "background-image": "none",
+    "transition": "2s"
+  })
+})
+
+$(".cases li:nth-of-type(7)").mouseenter (function() {
+  $(".cases").css({
+    "background-image": "url(images/skryabin.png)",
+    "background-size": "60%",
+    "background-position": "95% 100%",
+    "background-repeat": "no-repeat",
+    "-webkit-transition": "all" + "1s",
+    "-moz-transition": "all" + "1s",
+    "-o-transition": "all" + "1s",
+    "transition": "1s"
+  })
+})
+
+$(".cases li:nth-of-type(7)").mouseleave (function() {
   $(".cases").css({
     "background-image": "none",
     "transition": "2s"
