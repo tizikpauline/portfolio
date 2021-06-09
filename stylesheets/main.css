@@ -253,3 +253,61 @@ footer p {
     border: solid 0.1vw #111111;
   }
 }
+
+#projects a {
+  color: #F2F0E9;
+  text-transform: none;
+  text-decoration: none;
+  /* letter-spacing: 0.15em; */
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+#projects a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #F2F0E9;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+#projects a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+#contacts a {
+  color: #F2F0E9;
+  text-transform: none;
+  text-decoration: none;
+  /* letter-spacing: 0.15em; */
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+#contacts a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #111111;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+#contacts a:hover:after {
+  width: 100%;
+  left: 0;
+}
