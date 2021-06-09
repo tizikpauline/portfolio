@@ -157,6 +157,21 @@ main #projects {
   padding-left: 3vw;
 }
 
+.text .images {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50vw;
+}
+
+.mts, .grimes, .church, .eat, .bloowery, .prelab {
+  margin-bottom: -28vw;
+}
+
+.mts, .grimes, .church, .eat, .bloowery, .prelab, .skryabin {
+  opacity: 0;
+}
+
 #projects .cases {
   background-color: #111111;
   width: 50%;
