@@ -189,3 +189,34 @@ $(".cases li:nth-of-type(7)").mouseleave (function() {
     "transition": "0.5s"
   })
 })
+
+window.onscroll = function () {scrollingFunction()};
+
+function scrollingFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    $('.main .right h1').css({
+      "transform": "translate(-50vw,0)",
+      "-webkit-transform": "translate(-50vw,0)",
+      "color": "#111111",
+      "transition": "2s"
+    })
+  } else {
+    $('.main .right h1').css({
+      "transform": "translate(0vw,0)",
+      "-webkit-transform": "translate(0vw,0)",
+      "color": "#F2F0E9",
+      "transition": "2s"
+  })
+ }
+ if (document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300) {
+ $('.main h1').css({
+   "opacity": "0",
+   "transition": "0.5s"
+ })
+} else {
+ $('.main h1').css({
+   "opacity": "1",
+   "transition": "0.5s"
+})
+}
+}

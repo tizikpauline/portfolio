@@ -66,22 +66,40 @@ h1, h2 {
   font-family: "Otto Attac";
 }
 
-main .images-downloader {
+/* main .images-downloader {
   margin-left: 500vw;
   overflow: hidden;
   position: absolute;
   display: none;
-}
+} */
 
 main .main {
   display: flex;
   justify-content: center;
   align-items: center ;
-  height: 115vh;
+  height: 130vw;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+
+.bg-left {
+  height: 10vw;
+  width: 50%;
+  background-color: #F2F0E9;
+}
+
+.bg-right {
+  height: 10vw;
+  width: 50%;
+  background-color: #111111;
 }
 
 main .main h1 {
-  padding-top: 15vh;
+  position: fixed;
   font-size: 8rem;
   text-transform: uppercase;
   margin-left: 3vw;
@@ -91,12 +109,21 @@ main .left h1 {
   color: #111111;
 }
 
+main .right {
+  padding-top: 15vw;
+}
+
+main .left h1:last-child {
+  color: #111111;
+  padding-top: 15vw;
+}
+
 main .right h1 {
   color: #F2F0E9;
 }
 
-main .right h1:first-child {
-  width: 10vw;
+main .right h1:last-child {
+  padding-top: 15vw;
 }
 
 main #about {
