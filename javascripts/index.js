@@ -193,7 +193,7 @@ $(".cases li:nth-of-type(7)").mouseleave (function() {
 window.onscroll = function () {scrollingFunction()};
 
 function scrollingFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     $('.main .right h1').css({
       "transform": "translate(-50vw,0)",
       "-webkit-transform": "translate(-50vw,0)",
@@ -208,8 +208,12 @@ function scrollingFunction() {
       "transition": "2s"
   })
  }
- if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+ if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
  $('.main h1').css({
+   "opacity": "0",
+   "transition": "0.5s"
+ })
+ $('video').css({
    "opacity": "0",
    "transition": "0.5s"
  })
@@ -217,6 +221,10 @@ function scrollingFunction() {
  $('.main h1').css({
    "opacity": "1",
    "transition": "0.5s"
-})
+ })
+ $('video').css({
+   "opacity": "1",
+   "transition": "0.5s"
+ })
 }
 }
