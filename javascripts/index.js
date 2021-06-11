@@ -208,7 +208,7 @@ function scrollingFunction() {
       "transition": "2s"
   })
  }
- if (document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300) {
+ if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
  $('.main h1').css({
    "opacity": "0",
    "transition": "0.5s"
