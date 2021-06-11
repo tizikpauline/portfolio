@@ -8,9 +8,21 @@ html, body {
   /* overflow-x: hidden; */
 }
 
+.video-container {
+  position: absolute;
+  width: 100%;
+}
+
+.video-container video {
+  margin-left: 50vw;
+}
 
 html p, a {
   font-family: "Hagrid Regular";
+}
+
+header {
+  position: sticky;
 }
 
 header .menu {
@@ -32,7 +44,6 @@ header .menu {
 .right {
   height: 100%;
   width: 50%;
-  background-color: #111111;
 }
 
 header .left {
@@ -44,7 +55,7 @@ header .left {
 header .right {
   height: 100%;
   width: 50%;
-  background-color: #111111;
+  /* background-color: #111111; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -111,6 +122,7 @@ main .left h1 {
 
 main .right {
   padding-top: 15vw;
+  background-color: #111111;
 }
 
 main .left h1:last-child {
