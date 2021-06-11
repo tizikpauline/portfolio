@@ -98,13 +98,13 @@ main .main {
 }
 
 .bg-left {
-  height: 10vw;
+  height: 5vw;
   width: 50%;
   background-color: #F2F0E9;
 }
 
 .bg-right {
-  height: 10vw;
+  height: 5vw;
   width: 50%;
   background-color: #111111;
 }
