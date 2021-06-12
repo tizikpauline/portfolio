@@ -190,6 +190,62 @@ $(".cases li:nth-of-type(7)").mouseleave (function() {
   })
 })
 
+$("#contacts .behance").mouseenter (function() {
+  $("#contacts .behance").css({
+    "width": "50vw",
+    "transition": "0.5s"
+  })
+})
+
+$("#contacts .behance").mouseleave (function() {
+  $("#contacts .behance").css({
+    "width": "18vw",
+    "transition": "0.5s"
+  })
+})
+
+$("#contacts .instagram").mouseenter (function() {
+  $("#contacts .instagram").css({
+    "width": "50vw",
+    "transition": "0.5s"
+  })
+})
+
+$("#contacts .instagram").mouseleave (function() {
+  $("#contacts .instagram").css({
+    "width": "18vw",
+    "transition": "0.5s"
+  })
+})
+
+$("#contacts .telegram").mouseenter (function() {
+  $("#contacts .telegram").css({
+    "width": "50vw",
+    "transition": "0.5s"
+  })
+})
+
+$("#contacts .telegram").mouseleave (function() {
+  $("#contacts .telegram").css({
+    "width": "18vw",
+    "transition": "0.5s"
+  })
+})
+
+$("#contacts .email").mouseenter (function() {
+  $("#contacts .email").css({
+    "width": "50vw",
+    "transition": "0.5s"
+  })
+})
+
+$("#contacts .email").mouseleave (function() {
+  $("#contacts .email").css({
+    "width": "18vw",
+    "transition": "0.5s"
+  })
+})
+
 window.onscroll = function () {scrollingFunction()};
 
 function scrollingFunction() {
