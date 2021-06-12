@@ -208,21 +208,24 @@ function scrollingFunction() {
       "transition": "2s"
   })
  }
+ if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+ $('video').css({
+   "opacity": "0",
+   "transition": "0.5s"
+ })
+ } else {
+ $('video').css({
+   "opacity": "1",
+   "transition": "0.5s"
+ })
+ }
  if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
  $('.main h1').css({
    "opacity": "0",
    "transition": "0.5s"
  })
- $('video').css({
-   "opacity": "0",
-   "transition": "0.5s"
- })
 } else {
  $('.main h1').css({
-   "opacity": "1",
-   "transition": "0.5s"
- })
- $('video').css({
    "opacity": "1",
    "transition": "0.5s"
  })

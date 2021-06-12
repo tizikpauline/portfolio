@@ -74,7 +74,7 @@ header .menu img {
 }
 
 h1, h2 {
-  font-family: "Otto Attac";
+  font-family: "AgnetsType";
 }
 
 /* main .images-downloader {
@@ -98,20 +98,20 @@ main .main {
 }
 
 .bg-left {
-  height: 5vw;
+  height: 5vh;
   width: 50%;
   background-color: #F2F0E9;
 }
 
 .bg-right {
-  height: 5vw;
+  height: 5vh;
   width: 50%;
   background-color: #111111;
 }
 
 main .main h1 {
   position: fixed;
-  font-size: 8rem;
+  font-size: 10rem;
   text-transform: uppercase;
   margin-left: 3vw;
 }
@@ -121,13 +121,13 @@ main .left h1 {
 }
 
 main .right {
-  padding-top: 15vw;
+  padding-top: 20vw;
   background-color: #111111;
 }
 
 main .left h1:last-child {
   color: #111111;
-  padding-top: 15vw;
+  padding-top: 20vw;
 }
 
 main .right h1 {
@@ -135,7 +135,7 @@ main .right h1 {
 }
 
 main .right h1:last-child {
-  padding-top: 15vw;
+  padding-top: 20vw;
 }
 
 main #about {
