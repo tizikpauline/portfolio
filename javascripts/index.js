@@ -301,7 +301,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 
       $('header ul a').css({
         "display": "block",
-        "padding-bottom": "4vw"
+        "padding-bottom": "10vw"
       })
 
       $('header ul').css({
@@ -310,7 +310,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
         "justify-content": "flex-end",
         "align-items": "flex-end",
         "transition": "2s",
-        "margin-top": "2vw"
+        "margin-top": "6vw"
       })
 
       $('header .right').css({
