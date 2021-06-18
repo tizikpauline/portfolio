@@ -394,6 +394,26 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  @media (hover: hover) and (pointer: fine) {
+    #cursor {
+      display: none;
+      z-index: 99;
+      position: fixed;
+      left: 0;
+      top: 0;
+      pointer-events: none;
+      will-change: transform;
+    }
+
+    #cursor .cursor--inner {
+      width: 5vw;
+      height: 5vw;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      border: 0;
+    }
+  }
+
   header .menu {
     font-size: 3rem;
   }
