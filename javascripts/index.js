@@ -287,3 +287,77 @@ function scrollingFunction() {
  })
 }
 }
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+
+  $("header").mouseenter (function() {
+    $("#cursor .cursor--inner").css({
+      "border": "solid 0.1vw #F2F0E9",
+      "transition": "0.5s"
+    })
+  })
+
+  $(".background").mouseenter (function() {
+    $("#cursor .cursor--inner").css({
+      "border": "solid 0.1vw #F2F0E9",
+      "transition": "0.5s"
+    })
+  })
+
+  $(".main").mouseenter (function() {
+    $("#cursor .cursor--inner").css({
+      "border": "solid 0.1vw #F2F0E9",
+      "transition": "0.5s"
+    })
+  })
+
+  $(".main").mouseleave (function() {
+    $("#cursor .cursor--inner").css({
+      "border": "solid 0.1vw #111111",
+      "transition": "0.5s"
+    })
+  })
+
+  $(".about").mouseenter (function() {
+    $("#cursor .cursor--inner").css({
+      "border": "solid 0.1vw #111111",
+      "transition": "0.5s"
+    })
+  })
+
+  $(".about").mouseleave (function() {
+    $("#cursor .cursor--inner").css({
+      "border": "solid 0.1vw #F2F0E9",
+      "transition": "0.5s"
+    })
+  })
+
+  window.onscroll = function () {scrollingFunction()};
+
+  function scrollingFunction() {
+    if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+    $('.main h1').css({
+      "opacity": "0",
+      "transition": "0.5s"
+    })
+   } else {
+    $('.main h1').css({
+      "opacity": "1",
+      "transition": "0.5s"
+    })
+   }
+   if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+   $('video').css({
+     "opacity": "0",
+     "transition": "0.5s"
+   })
+   } else {
+   $('video').css({
+     "opacity": "1",
+     "transition": "0.5s"
+   })
+   }
+  }
+} else {
+  /* the viewport is less than 400 pixels wide */
+}
