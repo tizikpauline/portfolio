@@ -381,7 +381,7 @@ $('.menu-button').click(function() {
       "display": "flex",
       "flex-direction": "column",
       "justify-content": "flex-end",
-      "align-items": "flex-start",
+      "align-items": "flex-end",
       "transition": "2s",
       "margin-top": "2vw"
     })
@@ -439,6 +439,38 @@ $('.menu-button').click(function() {
 
     $('.menu-button').css({
       "display": "inline",
+      "transition": "2s"
+    })
+  })
+
+  $('header a').click(function() {
+    $('header .menu').css({
+      "height": "10vh",
+      "flex-direction": "row",
+      "background-color": "transparent",
+      "justify-content": "space-between",
+      "align-items": "center"
+    })
+
+    $('header ul').css({
+      "display": "none",
+      "transition": "2s",
+      "margin-top": "0"
+    })
+
+    $('header .right').css({
+      "flex-direction": "row",
+      "justify-content": "flex-end",
+      "align-items": "center"
+    })
+
+    $('.menu-button').css({
+      "display": "inline",
+      "transition": "2s"
+    })
+
+    $('.close-button').css({
+      "display": "none",
       "transition": "2s"
     })
   })
