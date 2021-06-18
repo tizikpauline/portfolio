@@ -395,24 +395,8 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  @media (hover: hover) and (pointer: fine) {
-    #cursor {
-      display: none;
-      z-index: 99;
-      position: fixed;
-      left: 0;
-      top: 0;
-      pointer-events: none;
-      will-change: transform;
-    }
-
-    #cursor .cursor--inner {
-      width: 5vw;
-      height: 5vw;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      border: 0;
-    }
+  #cursor {
+    display: none;
   }
 
   header .menu {
@@ -618,7 +602,7 @@ footer p {
 
     #projects a:after {
       background: none;
-      display: block;
+      display: none;
       height: 0;
       left: 0;
       position: relative;
@@ -640,7 +624,7 @@ footer p {
       justify-content: flex-start;
       align-items: flex-start;
 
-      background-color: #FF621F;
+      background-color: transparent;
       height: 30vw;
       padding-left: 8vw;
       padding-top: 10vw;
@@ -758,8 +742,7 @@ footer p {
      flex-direction: column;
      justify-content: flex-start;
      align-items: flex-start;
-
-     background-color: #FF621F;
+/*  */
      height: 60vw;
      padding-left: 8vw;
      padding-top: 10vw;
