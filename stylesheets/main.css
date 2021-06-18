@@ -8,6 +8,13 @@ html, body {
   overflow-x: hidden;
 }
 
+.images-downloader {
+  margin-left: 500vw;
+  overflow: hidden;
+  position: absolute;
+  display: none;
+}
+
 .video-container {
   position: absolute;
   width: 100%;
