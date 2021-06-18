@@ -398,9 +398,11 @@ footer p {
   }
 
   .video-container video {
-    width: 100vw;
-    margin: 0;
-    /* height: 100vh; */
+    overflow: hidden;
+    /* width: 100%; */
+    /* margin: 0; */
+    height: 100vh;
+    margin-left: 0vw;
   }
 
   .menu-button {
@@ -409,12 +411,10 @@ footer p {
      cursor: pointer;
    }
    .bg-left {
-
      background-color: #111111;
    }
 
    .bg-right {
-
      background-color: #111111;
    }
 
@@ -468,6 +468,7 @@ footer p {
       font-size: 15rem;
       line-height: 16.5rem;
       padding-bottom: 10vw;
+      width: 100vw
     }
 
     main .main .left h1 {
@@ -671,3 +672,11 @@ footer p {
       display: none;
     }
 }
+
+ @media (max-width: 375px) {
+   .video-container video {
+     margin: 0;
+     height: 100vh;
+     overflow: hidden;
+   }
+ }

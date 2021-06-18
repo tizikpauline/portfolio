@@ -246,50 +246,49 @@ $("#contacts .email").mouseleave (function() {
   })
 })
 
-window.onscroll = function () {scrollingFunction()};
+if (window.matchMedia("(min-width: 768px)").matches) {
+  window.onscroll = function () {scrollingFunction()};
 
-function scrollingFunction() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    $('.main .right h1').css({
-      "transform": "translate(-50vw,0)",
-      "-webkit-transform": "translate(-50vw,0)",
-      "color": "#111111",
-      "transition": "2s"
+  function scrollingFunction() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      $('.main .right h1').css({
+        "transform": "translate(-50vw,0)",
+        "-webkit-transform": "translate(-50vw,0)",
+        "color": "#111111",
+        "transition": "2s"
+      })
+    } else {
+      $('.main .right h1').css({
+        "transform": "translate(0vw,0)",
+        "-webkit-transform": "translate(0vw,0)",
+        "color": "#F2F0E9",
+        "transition": "2s"
     })
+   }
+   if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+   $('video').css({
+     "opacity": "0",
+     "transition": "0.5s"
+   })
+   } else {
+   $('video').css({
+     "opacity": "1",
+     "transition": "0.5s"
+   })
+   }
+   if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+   $('.main h1').css({
+     "opacity": "0",
+     "transition": "0.5s"
+   })
   } else {
-    $('.main .right h1').css({
-      "transform": "translate(0vw,0)",
-      "-webkit-transform": "translate(0vw,0)",
-      "color": "#F2F0E9",
-      "transition": "2s"
-  })
+   $('.main h1').css({
+     "opacity": "1",
+     "transition": "0.5s"
+   })
+  }
  }
- if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
- $('video').css({
-   "opacity": "0",
-   "transition": "0.5s"
- })
- } else {
- $('video').css({
-   "opacity": "1",
-   "transition": "0.5s"
- })
- }
- if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
- $('.main h1').css({
-   "opacity": "0",
-   "transition": "0.5s"
- })
 } else {
- $('.main h1').css({
-   "opacity": "1",
-   "transition": "0.5s"
- })
-}
-}
-
-if (window.matchMedia("(max-width: 768px)").matches) {
-
   // burger-menu
 
   $('.menu-button').click(function() {
@@ -448,7 +447,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
   window.onscroll = function () {scrollingFunction()};
 
   function scrollingFunction() {
-    if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     $('.main h1').css({
       "opacity": "0",
       "transition": "0.5s"
@@ -459,7 +458,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
       "transition": "0.5s"
     })
    }
-   if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+   if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
    $('video').css({
      "opacity": "0",
      "transition": "0.5s"
@@ -471,6 +470,4 @@ if (window.matchMedia("(max-width: 768px)").matches) {
    })
    }
   }
-} else {
-  /* the viewport is less than 400 pixels wide */
 }
