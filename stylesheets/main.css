@@ -18,6 +18,7 @@ html, body {
 .video-container {
   position: absolute;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .video-container video {
@@ -677,6 +678,6 @@ footer p {
    .video-container video {
      margin: 0;
      height: 100vh;
-     overflow: hidden;
+     overflow-x: hidden;
    }
  }
