@@ -416,6 +416,7 @@ footer p {
      margin-right: 3vw;
      cursor: pointer;
    }
+
    .bg-left {
      background-color: #111111;
    }
@@ -683,6 +684,14 @@ footer p {
 }
 
  @media (max-width: 375px) {
+   .bg-left {
+     height: 0vw;
+   }
+
+   .bg-right {
+     height: 0vw;
+   }
+
    .close-button {
      width: 8vw;
    }
