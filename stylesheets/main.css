@@ -231,6 +231,10 @@ main #projects {
   width: 50vw;
 }
 
+.text .images img {
+  width: 50vw;
+}
+
 .mts, .grimes, .church, .eat, .bloowery, .prelab {
   margin-bottom: -28vw;
 }
