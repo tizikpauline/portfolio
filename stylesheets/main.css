@@ -305,15 +305,15 @@ main #projects {
 footer {
   padding-top: 5vw;
   background-color: #FF621F;
-  height: 3vw;
+  height: 1vw;
   padding-bottom: 5vw;
 }
 
 footer p {
   color: #111111;
   padding-left: 3vw;
-  font-size: 1.5rem;
-  line-height: 2.3rem;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 /* custom cursor */
@@ -625,7 +625,7 @@ footer p {
       justify-content: flex-start;
       align-items: flex-start;
 
-      background-color: transparent;
+      background-color: #FF621F;;
       height: 30vw;
       padding-left: 8vw;
       padding-top: 10vw;
@@ -670,7 +670,7 @@ footer p {
     }
 
     footer {
-      height: 8vw;
+      height: 5vw;
     }
 
     footer p {
