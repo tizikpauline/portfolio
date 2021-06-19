@@ -1,6 +1,6 @@
 // Smooth scroll
 $(document).ready(function(){
-  $(".right ul").on("click","a", function (event) {
+  $(".right ul").on("click",".anchor", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
         top = $(id).offset().top;
