@@ -683,7 +683,7 @@ footer p {
     }
 }
 
- @media (max-width: 375px) {
+ @media (max-width: 425px) {
    .bg-left {
      height: 0vw;
    }
