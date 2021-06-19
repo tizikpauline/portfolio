@@ -408,7 +408,7 @@ footer p {
     overflow: hidden;
     /* width: 100%; */
     /* margin: 0; */
-    height: 100vh;
+    height: 120vh;
     margin-left: 0vw;
   }
 
@@ -477,9 +477,9 @@ footer p {
     }
 
     main .main h1 {
-      font-size: 15rem;
-      line-height: 16.5rem;
-      padding-bottom: 10vw;
+      font-size: 18rem;
+      line-height: 19rem;
+      padding-bottom: 15vw;
       width: 100vw
     }
 
@@ -494,12 +494,12 @@ footer p {
     }
 
     main .right {
-      padding-top: 35vw;
+      padding-top: 40vw;
       background-color: #111111;
     }
 
     main .left h1:last-child {
-      padding-top: 35vw;
+      padding-top: 40vw;
     }
 
     main .right h1 {
@@ -507,7 +507,7 @@ footer p {
     }
 
     main .right h1:last-child {
-      padding-top: 35vw;
+      padding-top: 40vw;
     }
 
     .left {
@@ -685,6 +685,26 @@ footer p {
 }
 
  @media (max-width: 425px) {
+
+   main .main h1 {
+     font-size: 20rem;
+     line-height: 21rem;
+     padding-bottom: 18vw;
+     width: 100vw
+   }
+
+   main .right {
+     padding-top: 45vw;
+   }
+
+   main .left h1:last-child {
+     padding-top: 45vw;
+   }
+
+   main .right h1:last-child {
+     padding-top: 45vw;
+   }
+
    .bg-left {
      height: 0vw;
    }
