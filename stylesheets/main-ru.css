@@ -8,9 +8,17 @@ html, body {
   overflow-x: hidden;
 }
 
+.images-downloader {
+  margin-left: 500vw;
+  overflow: hidden;
+  position: absolute;
+  display: none;
+}
+
 .video-container {
   position: absolute;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .video-container video {
@@ -19,6 +27,10 @@ html, body {
 
 html p, a {
   font-family: "Hagrid Regular";
+}
+
+html a {
+  cursor: pointer;
 }
 
 header {
@@ -44,6 +56,20 @@ header .menu {
 .right {
   height: 100%;
   width: 50%;
+}
+
+.close-button {
+  margin-top: 5vw;
+  margin-right: 3vw;
+  margin-bottom: 3vw;
+  display: none;
+  width: 5vw;
+  cursor: pointer;
+}
+
+.menu-button {
+  display: none;
+  width: 5vw;
 }
 
 header .left {
@@ -72,7 +98,14 @@ header a:hover {
   transition: ease-in 0.5s;
 }
 
-header .menu img {
+header .menu .left img {
+  margin-left: 3vw;
+  margin-top: 1vw;
+  width: 20vh;
+}
+
+header .menu .left img:last-child {
+  display: none;
   margin-left: 3vw;
   margin-top: 1vw;
   width: 20vh;
@@ -131,7 +164,6 @@ main .right {
 }
 
 main .left h1:last-child {
-  color: #111111;
   padding-top: 20vw;
 }
 
@@ -208,6 +240,10 @@ main #projects {
   width: 50vw;
 }
 
+.text .images img {
+  width: 50vw;
+}
+
 .mts, .grimes, .church, .eat, .bloowery, .prelab {
   margin-bottom: -28vw;
 }
@@ -271,11 +307,14 @@ footer {
   padding-top: 5vw;
   background-color: #FF621F;
   height: 3vw;
+  padding-bottom: 5vw;
 }
 
 footer p {
   color: #111111;
   padding-left: 3vw;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 /* custom cursor */
@@ -355,3 +394,388 @@ footer p {
   width: 100%;
   left: 0;
 }
+
+@media (max-width: 768px) {
+  #cursor {
+    display: none;
+  }
+
+  header .menu {
+    font-size: 3rem;
+  }
+
+  .video-container video {
+    overflow: hidden;
+    /* width: 100%; */
+    /* margin: 0; */
+    height: 100vh;
+    margin-left: 0vw;
+  }
+
+  .menu-button {
+     display: inline;
+     margin-right: 3vw;
+     cursor: pointer;
+   }
+
+   .bg-left {
+     background-color: #111111;
+   }
+
+   .bg-right {
+     background-color: #111111;
+   }
+
+   .left {
+     background-color: transparent;
+   }
+
+   header .left {
+     background-color: transparent;
+   }
+
+   header ul {
+      display: none;
+    }
+
+    header a {
+      /* margin-right: -200vw; */
+      display: none;
+      /* padding-bottom: 6vw; */
+    }
+
+    header .menu {
+      font-size: 5rem;
+    }
+
+    main .left h1 {
+      color: #F2F0E9;
+    }
+
+    header .menu .left img:last-child {
+      display: inline;
+      margin-left: 5vw;
+      margin-top: 1vw;
+      width: 20vh;
+    }
+
+    header .menu .left img:first-child {
+      display: none;
+    }
+
+    .bg-left {
+      height: 5vw;
+    }
+
+    .bg-right {
+      height: 5vw;
+    }
+
+    main .main {
+      height: 100vh;
+      background-color: #111111;
+    }
+
+    main .main h1 {
+      font-size: 15rem;
+      line-height: 16.5rem;
+      padding-bottom: 10vw;
+      width: 100vw
+    }
+
+    main .main .left h1 {
+      margin-left: 5vw;
+    }
+
+    main .main .right h1{
+      margin-left: -45vw;
+      margin-right: 5vw;
+      /* width: 70vw; */
+    }
+
+    main .right {
+      padding-top: 35vw;
+      background-color: #111111;
+    }
+
+    main .left h1:last-child {
+      padding-top: 35vw;
+    }
+
+    main .right h1 {
+      color: #F2F0E9;
+    }
+
+    main .right h1:last-child {
+      padding-top: 35vw;
+    }
+
+    .left {
+      height: 100vw;
+      background-color: #111111;
+    }
+
+    .right {
+      height: 100vw;
+      width: 50%;
+    }
+
+    main #about {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    main #about .pic img {
+      width: 100vw;
+    }
+
+    main #about .text {
+      background-color: #F2F0E9;
+      padding-left: 8vw;
+      padding-right: 8vw;
+      padding-bottom: 10vw;
+    }
+
+    #about .text h2 {
+      font-size: 10rem;
+      color: #111111;
+      padding-bottom: 2vw;
+      padding-top: 10vw;
+    }
+
+    #about .text p {
+      font-size: 3rem;
+      line-height: 4.5rem;
+      color: #111111;
+      padding-bottom: 2vw;
+      padding-right: 8vw;
+    }
+
+    #about .text a {
+      font-size: 3rem;
+      line-height: 4.5rem;
+      color: #23CE6B;
+    }
+
+    main #projects {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #111111;
+      padding-left: 8vw;
+    }
+
+    #projects .text {
+      background-color: #111111;
+      width: 100%;
+      height: 8vh;
+      /* padding-left: 8vw; */
+    }
+
+    #projects .text h2 {
+      font-size: 10rem;
+      color: #F2F0E9;
+      padding-bottom: 2vw;
+      padding-top: 10vw;
+      padding-left: 0vw;
+    }
+
+    #projects .cases {
+      width: 100%;
+      background-color: transparent;
+    }
+
+    #projects .cases a {
+      font-size: 5rem;
+      text-align: left;
+      padding-bottom: 5vw;
+    }
+
+    #projects .cases ul {
+      padding-left: 0vw;
+    }
+
+    #projects a {
+      display: inline-block;
+      padding: 0;
+      position: relative;
+    }
+
+    #projects a:after {
+      background: none;
+      display: none;
+      height: 0;
+      left: 0;
+      position: relative;
+      width: 0;
+    }
+
+    #projects a:hover:after {
+      width: 100%;
+      left: 0;
+    }
+
+    #contacts .first, .final {
+      display: none;
+    }
+
+    #contacts .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      background-color: #FF621F;;
+      height: 30vw;
+      padding-left: 8vw;
+      padding-top: 10vw;
+    }
+
+    #contacts .links a {
+      font-size: 3rem;
+      text-decoration: none;
+      text-align: left;
+      padding-bottom: 5vw;
+    }
+
+    #contacts .first, .behance, .instagram, .telegram, .email, .final {
+      width: 18vw;
+      height: 10vw;
+      background-color: transparent;
+      text-align: left;
+
+      display: inline-block;
+    }
+
+    #contacts a {
+      color: #F2F0E9;
+
+      display: inline-block;
+      padding: 0;
+      position: relative;
+    }
+
+    #contacts a:after {
+      background: none;
+      display: block;
+      height: 0;
+      left: 0;
+      position: relative;
+      width: 0;
+    }
+
+    #contacts a:hover:after {
+      width: 100%;
+      left: 0;
+    }
+
+    footer {
+      height: 5vw;
+    }
+
+    footer p {
+      padding-left: 8vw;
+      font-size: 2rem;
+    }
+
+    .text .images {
+      display: none;
+    }
+}
+
+ @media (max-width: 425px) {
+   .bg-left {
+     height: 0vw;
+   }
+
+   .bg-right {
+     height: 0vw;
+   }
+
+   .close-button {
+     width: 8vw;
+   }
+
+   .menu-button {
+     width: 8vw;
+   }
+
+   .video-container video {
+     margin: 0;
+     height: 100vh;
+     overflow-x: hidden;
+   }
+
+   #about .text h2 {
+     font-size: 15rem;
+     color: #111111;
+     padding-bottom: 5vw;
+     padding-top: 15vw;
+   }
+
+   #about .text p {
+     font-size: 5rem;
+     line-height: 6.5rem;
+     color: #111111;
+     padding-bottom: 5vw;
+     padding-right: 8vw;
+   }
+
+   #about .text a {
+     font-size: 5rem;
+     line-height: 6.5rem;
+     color: #23CE6B;
+   }
+
+   #projects .text h2 {
+     font-size: 15rem;
+     color: #F2F0E9;
+     padding-bottom: 5vw;
+     padding-top: 15vw;
+     padding-left: 0vw;
+   }
+
+   #projects .cases {
+     width: 100%;
+     background-color: transparent;
+     padding-top: 10vw;
+   }
+
+   #projects .cases a {
+     font-size: 7rem;
+     text-align: left;
+     padding-bottom: 10vw;
+   }
+
+   #contacts .links {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+/*  */
+     height: 60vw;
+     padding-left: 8vw;
+     padding-top: 10vw;
+   }
+
+   #contacts .links a {
+     font-size: 5rem;
+     line-height: 8rem;
+     text-decoration: none;
+     text-align: left;
+   }
+
+   #contacts .links div {
+      padding-bottom: 4vw;
+   }
+
+   footer {
+     height: 5vw;
+   }
+
+   footer p {
+     padding-left: 8vw;
+     font-size: 4rem;
+   }
+ }

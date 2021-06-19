@@ -29,6 +29,10 @@ html p, a {
   font-family: "Hagrid Regular";
 }
 
+html a {
+  cursor: pointer;
+}
+
 header {
   position: sticky;
 }
@@ -738,12 +742,13 @@ footer p {
    #projects .cases {
      width: 100%;
      background-color: transparent;
+     padding-top: 10vw;
    }
 
    #projects .cases a {
      font-size: 7rem;
      text-align: left;
-     padding-bottom: 15vw;
+     padding-bottom: 10vw;
    }
 
    #contacts .links {

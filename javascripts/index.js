@@ -287,6 +287,17 @@ if (window.matchMedia("(min-width: 768px)").matches) {
      "transition": "0.5s"
    })
   }
+  if (document.body.scrollTop > 1400 || document.documentElement.scrollTop > 1400) {
+  $('.main h1').css({
+    "display": "none",
+    "transition": "0.5s"
+  })
+ } else {
+  $('.main h1').css({
+    "display": "block",
+    "transition": "0.5s"
+  })
+ }
  }
 } else {
   // burger-menu
@@ -447,6 +458,18 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   window.onscroll = function () {scrollingFunction()};
 
   function scrollingFunction() {
+    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+    $('video').css({
+      "opacity": "0",
+      "transition": "0.5s"
+    })
+    } else {
+    $('video').css({
+      "opacity": "1",
+      "transition": "0.5s"
+    })
+    }
+
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     $('.main h1').css({
       "opacity": "0",
@@ -458,16 +481,17 @@ if (window.matchMedia("(min-width: 768px)").matches) {
       "transition": "0.5s"
     })
    }
-   if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-   $('video').css({
-     "opacity": "0",
+
+   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+   $('.main h1').css({
+     "display": "none",
      "transition": "0.5s"
    })
-   } else {
-   $('video').css({
-     "opacity": "1",
+  } else {
+   $('.main h1').css({
+     "display": "block",
      "transition": "0.5s"
    })
-   }
+  }
   }
 }
