@@ -23,6 +23,7 @@ html, body {
 
 .video-container video {
   margin-left: 50vw;
+  width: 70vw;
 }
 
 html p, a {
@@ -393,6 +394,12 @@ footer p {
 #contacts a:hover:after {
   width: 100%;
   left: 0;
+}
+
+@media (max-width: 1440px) {
+  .video-container video {
+    width: auto;
+  }
 }
 
 @media (max-width: 768px) {
