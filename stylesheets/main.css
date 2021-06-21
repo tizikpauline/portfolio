@@ -23,6 +23,7 @@ html, body {
 
 .video-container video {
   margin-left: 50vw;
+  width: 70vw;
 }
 
 html p, a {
@@ -398,6 +399,12 @@ footer p {
   left: 0;
 }
 
+@media (max-width: 1440px) {
+  .video-container video {
+    width: auto;
+  }
+}
+
 @media (max-width: 768px) {
   #cursor {
     display: none;
@@ -409,9 +416,11 @@ footer p {
 
   .video-container video {
     overflow: hidden;
+    width: auto;
     /* width: 100%; */
     /* margin: 0; */
     height: 120vh;
+    margin-top: 0vw;
     margin-left: 0vw;
   }
 
